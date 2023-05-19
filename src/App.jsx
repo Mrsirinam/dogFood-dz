@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import Home from "./pages/Home";
 import { Routes, Route, Link } from "react-router-dom"
 import Catalog from "./pages/Catalog";
+import Product from "./pages/Product";
 
 
 
@@ -40,6 +41,8 @@ export default () => {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/catalog" element={<Catalog goods={goods} />} />
+					<Route path="/product/:id" element={<Product token={token} />} />
+
 				</Routes>
 			</Container>
 
