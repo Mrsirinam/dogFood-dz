@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
 import Home from "./pages/Home";
-import { Routes, Route, Link } from "react-router-dom"
 import Catalog from "./pages/Catalog";
 import Product from "./pages/Product";
+import { Routes, Route, Link } from "react-router-dom"
+import { Container } from "react-bootstrap";
+
+
+
 
 
 
