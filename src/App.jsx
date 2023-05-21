@@ -45,7 +45,6 @@ export default () => {
 					<Route path="/" element={<Home />} />
 					<Route path="/catalog" element={<Catalog goods={goods} />} />
 					<Route path="/product/:id" element={<Product token={token} />} />
-
 				</Routes>
 			</Container>
 
