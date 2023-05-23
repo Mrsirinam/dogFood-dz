@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { Routes, Route, Link } from "react-router-dom"
+import { Container } from "react-bootstrap";
+
 import Home from "./pages/Home";
 import Catalog from "./pages/Catalog";
 import Product from "./pages/Product";
-import { Routes, Route, Link } from "react-router-dom"
-import { Container } from "react-bootstrap";
+import Header from "./components/Header";
+
+
 
 
 
@@ -36,9 +40,8 @@ export default () => {
 	}, [token])
 
 	return <>
-		<header className="container-fluid">header</header>
-		<Link to="/">Главная</Link>
-		<Link to="/catalog">Каталог</Link>
+		<Header />
+
 		<main>
 			<Container>
 				<Routes>
@@ -47,8 +50,11 @@ export default () => {
 					<Route path="/product/:id" element={<Product token={token} />} />
 				</Routes>
 			</Container>
-
 		</main >
-		<footer className="container-fluid">footer</footer>
+		<footer className="container-fluid d-flex align-items-center">
+			<Container>
+				©2023 React
+			</Container>
+		</footer>
 	</>
 }

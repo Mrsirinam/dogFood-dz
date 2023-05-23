@@ -1,30 +1,38 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import AdBlock from "../components/AdBlock";
+
+
 
 let ads = [
 	{
-		caption: "Ням-ням",
-		text: "Лучшеелакомство для собак",
-		bg: "springgreen",
-		pic: "https://glavnoehvost.ru/upload/thumbs/source/productimage/image/9d0a4c5-289e-11e7-940f-d0509947687b8a19177d-3a5f-11e9-9482-d0509947687b_5ddcacf24cbf1.png"
+		caption: "Pedigree",
+		text: "Лучшее лакомство для ваших собак",
+		bg: "lightblue",
+		pic: "https://www.pedigree.ru/photos/Rations_196/PG_2.2kg_face_Universal-min.png"
 	},
 	{
 		caption: "Ням-ням",
-		text: "Лучшеелакомство для собак",
+		text: "Лучшее лакомство для собак",
 		bg: "violet",
 		pic: " https://free-png.ru/wp-content/uploads/2021/05/free-png.ru-366-340x340.png"
 	},
 	{
 		caption: "Ням-ням",
-		text: "Лучшеелакомство для собак",
-		bg: "lightblue",
+		text: "Лучшее лакомство для собак",
+		bg: "lightpink",
 		pic: "https://domkorma.ru/components/com_jshopping/files/img_products/______2.png"
 	}
 ]
 
 const Home = () => {
 	return <>
+		<Row className="gx-10 gy-4">
+			<Col xs={12}>
+				<div></div>
+			</Col>
+		</Row>
+
 		<Row className="gx-5 gy-4">
 			<Col xs={12}>
 				<AdBlock {...ads[0]} />
